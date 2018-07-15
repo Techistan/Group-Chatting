@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChatEasy</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-color:rgba(200,200,200,0.3);overflow:hidden">
+  <div id="navbar">
+
+  </div>
+  <div class="row" id="div">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <button type='button'  class="btn btn-info btn-lg" id="btna" onclick="modala()">Create Account</button>
+          <button type='button'  class="btn btn-warning btn-lg" id="btnd" onclick="login()">Login</button>
+          <button type='button'  class="btn btn-primary btn-lg" id="btnb" onclick="modalb()" style="display:none">Enter Message</button>
+          <button type='button'  class="btn btn-danger btn-lg" id="btnc" onclick="logout()" style="display:none">Logout</button>
+    </div>
+  </div>
+<div id='container' class="col-lg-12 col-md-12  col-sm-12 col-xs-12" ></div>
+<div id="formsubmit"></div>
+<div id="showitem" style="display:none"></div>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBfmukxvGs1upm_B20zjLiAWLTI6rXLaag",
+    authDomain: "chat-application-655fb.firebaseapp.com",
+    databaseURL: "https://chat-application-655fb.firebaseio.com",
+    projectId: "chat-application-655fb",
+    storageBucket: "chat-application-655fb.appspot.com",
+    messagingSenderId: "117550760471"
+  };
+  firebase.initializeApp(config);
+  </script>
+  <script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
