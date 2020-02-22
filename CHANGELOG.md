@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to the "Group Chatting" extension will be documented in this file.
+All notable changes to the "Group Chatting" will be documented in this file.
 
 ## Group Chatting [1.0.0] - 2019-09-01 (Released) 
 ### Added
